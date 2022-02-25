@@ -11,6 +11,8 @@ std::vector<std::vector<int>> arraysGenAndSort(int n) {
 
 	for (int i = 0; i < n; i++) {
 
+		std::cout << " Generate and sort the " << i + 1 << " array...\r";
+
 		// new array size generation and memory allocation
 		arrays[i].resize(uniqueArraySizeGeneration(existingSizes));
 
@@ -24,6 +26,8 @@ std::vector<std::vector<int>> arraysGenAndSort(int n) {
 			arrayDescSort(arrays[i]);
 		}
 	}
+
+	std::cout << n << " arrays were generated and sorted\n";
 
 	return arrays;
 }

@@ -1,6 +1,6 @@
 #include "ArraysSort.h"
 
 int main() {
-	int n = 10;
+	int n = 1000;
 	arraysGenAndSort(n);
 }
